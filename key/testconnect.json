@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "espresso-black-box",
+  "private_key_id": "f3e0b2ceb6b1df59be3b8b57517cba9aea314700",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDSK5clLdjl0F1J\npG24N3wWiS8ymOZQ0TLQm7xvg9PUpEw52avojq4Rj2XEmxBGvJMjk4RDfp10esoN\nqVVgjrPcuxv90puB09GVa0BqvCZzkz8bxamVH8eZqEz7cH5B8llxxdIqZimO4BdI\nMzNxVK6ueYEtFuhiPJrt+UfiM7j/WSejvilIX+9MTnxxGCnqOB6cTjAg1F0f90ac\n7S10ZHtjn3C79GfXeMKCYoHxa/Tnkm91ohk4NFWK9mCy0rdImU/Ubsn1+cNVtteY\nc95gZ53Qs1AAdnt/CqrQjh9ONnLEbYtwporw77GqII4cTJXCzxAH/wFQ4t0tbwq+\nGP5KPg43AgMBAAECggEAI1QpgZnt2l/GtrDZsrw88yrXULmMCazIznFHYTV3P8jo\neVcCQ0Lsts30jPKF72YWk8Xh11iqziAv49EBpYwHZwTa5TVoZ4/8LJJNT0PWcNoh\nIyF8arFfY5B7dE7KInrDF1FqDS+EL9yyfTQCIzxZasHI+ZPet1i5sGQVdcw8/ksn\nsemDK5spMZtvw2md00CnyyY3lFXlUO2+TBhJkEF3UTaEwV8/g4oTDpffQ+lstFyL\n0ez8Grq+rQgeD3u0u2RD0UCBPrss57hfeD59hIWBdMIs99GfmycEkqHf6WWcnM0V\negfZ3VKhMajmUz738vcr8ko0QMFT0vEvf7CBczE5JQKBgQD2pHBjCOpYLuxheQ9W\nRR87nMTK/X3jpxE8DR5bigRm/kSiB0+ucZaF/BDydxB4hEOa+NjCPRMpIev/1xAj\nPrTSi1CFfcT+pl/kjtDYlB/UYmwd6PwTr4OSRwxmPtC4EHl1khxs/MUdbSI7/m4A\nM05HvB6mO1zSjRnT/eEgAVmfNQKBgQDaJOjTwglvLJzUmLQzVHNcvvVaV8NUKv4E\neijr0CmM4U8wcliBs6WwGx+66iCKUvFRDgElEpp0QWDYJdAe9seKsYe1mP8h0yGR\nS+OPS9IoQiV17FW85r1N+BjTfKZRmZ7RuLlQyFb/c3jyhjlS1aTNm22AaqpQYU/B\nHK5+kDeJOwKBgBzKQRwuVDyK7ajLGtE1LFonCImxYVqLi+V4moyQ5can85b+R3zT\nYYCuVcQXxeJrfgC+/35c5rmsbgHlNssGbNEO1g1fCvm2rgbd7N77G2QNQRWUtqgN\nmsweYwIkXvS9Z5AjyBGox9GRhad/IZQAaSjSerlowIMLWXJ3dinoPm/pAoGAGFyc\n3+FAmnjZ/uga38yjoYz166P3fXPbsHZQEZ3KtiAHbvqmJb4BV/x/e6lf/vKqXon4\n2MIOG8OdZCY86uhWeoe/BynR/F4O1qIqBLvL+ZEBi/zbyl/eblGxvBSkomJMmVFO\n6NWm2Zp0vGj/B+AyKoAcJ4ZCBP4JISDp39qNSTcCgYB0hs+YtfgsNOe+wKyJS8+x\npIwpoWNZw2S103xjkzLcU92JGZbtazl0EGLi/Vd6r741+eVO8zJv71ohZwBtIx9X\nLCIZRr8JDdQ7Yhahr14InhPcgXi3HZ7e5j4wiU055xfoc+9pPM6MfQBStP9Vyczl\nUxIr8YB0cm36sGUukJOaPQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-g3jje@espresso-black-box.iam.gserviceaccount.com",
+  "client_id": "117735760168968487260",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-g3jje%40espresso-black-box.iam.gserviceaccount.com"
+}

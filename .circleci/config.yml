@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/code
+    docker:
+      - image: circleci/android:api-27
+    environment:
+      JVM_OPTS: -Xmx3200m
+    steps:
+      - checkout
+      - restore_cache:
+          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
+      - run:
+          name: Download Dependencies
+          command: ./gradlew androidDependencies
+      - save_cache:
+          paths:
+            - ~/.gradle
+          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
+      - run:
+          name: Setup project ID
+          command:  sudo gcloud config set project $PROJECT_ID
+      - run:
+          name: Install kubernetes
+          command:  sudo apt-get install kubectl
+      - run:
+          name: Install Google cloud sdk
+          command:  sudo apt-get install google-cloud-sdk
+      - run:
+          name: Auth in GCS
+          command:  sudo gcloud auth activate-service-account --key-file=key/testconnect.json     
+      - run:
+          name: Generate instrumentation app
+          command: ./gradlew assembleDebug
+      - run:
+          name: Resign demo APK
+          command: |
+            export PATH=$PATH:$ANDROID_HOME/build-tools/28.0.3
+            chmod +x signapk.sh
+            ./signapk.sh demo.apk
+      - run:
+          name: Run Automation Tests
+          command:  sudo gcloud firebase test android run --type instrumentation --app demo.apk --test app/build/outputs/apk/debug/app-debug.apk --device model=Nexus6,version=22,locale=en,orientation=portrait

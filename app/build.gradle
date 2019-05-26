@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.espresso_blackbox_testing"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'androidx.test.espresso:espresso-intents:3.1.0'
+    implementation 'androidx.test:runner:1.1.0'
+    implementation 'androidx.test:rules:1.1.0'
+    implementation 'com.azimolabs.conditionwatcher:conditionwatcher:0.2'
+}
